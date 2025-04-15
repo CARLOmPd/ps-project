@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Camisas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      background-color: #ff6600;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .product-card {
+      background-color: #222;
+      border: 1px solid #444;
+      border-radius: 10px;
+      max-width: 400px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-name {
+      font-size: 1.5em;
+      margin: 15px 0;
+      color: #ff6600;
+    }
+
+    .product-price {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn-comprar {
+      background-color: #ff6600;
+      color: #fff;
+    }
+
+    .btn-comprar:hover {
+      background-color: #e65c00;
+    }
+
+    .btn-carrinho {
+      background-color: #333;
+      color: #ff6600;
+      border: 1px solid #ff6600;
+    }
+
+    .btn-carrinho:hover {
+      background-color: #444;
+    }
+
+    .btn-curtir {
+      background-color: transparent;
+      color: #ff6600;
+      border: none;
+      font-size: 1.5em;
+    }
+
+    .btn-curtir:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Loja de Camisas
+  </header>
+
+  <div class="container">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/350x350.png?text=Camisa+Preta" alt="Camisa Preta">
+      <div class="product-name">Camisa Preta Estilosa</div>
+      <div class="product-price">R$ 79,90</div>
+      <div class="buttons">
+        <button class="btn btn-comprar">Comprar</button>
+        <button class="btn btn-carrinho">Adicionar ao Carrinho</button>
+        <button class="btn btn-curtir">❤️</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
